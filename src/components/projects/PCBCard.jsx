@@ -8,6 +8,7 @@ import AnimatedSection from '../ui/AnimatedSection';
 import PhotoSlideshow from './PhotoSlideshow';
 import TryImg from '../ui/TryImg';
 import { pcbPhotoData } from '../../data/pcbPhotoData';
+import { pub } from '../../utils/asset';
 
 function buildPhotos(slug, fabricated = true) {
   const data = pcbPhotoData[slug];
@@ -15,10 +16,10 @@ function buildPhotos(slug, fabricated = true) {
   const count = fabricated ? 4 : 3;
   return {
     photos: data.photos.slice(0, count).map((caption, i) => ({
-      src:     `/pcb-data/${slug}/photo-${i + 1}.jpg`,
+      src:     pub(`/pcb-data/${slug}/photo-${i + 1}.jpg`),
       caption,
     })),
-    schematicSrc:     `/pcb-data/${slug}/schematic.jpg`,
+    schematicSrc:     pub(`/pcb-data/${slug}/schematic.jpg`),
     schematicCaption: data.schematic,
   };
 }
@@ -172,7 +173,7 @@ export default function PCBCard({ slug, index }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch(`/pcb-data/${slug}/info.json`)
+    fetch(pub(`/pcb-data/${slug}/info.json`))
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => { setInfo(data); setLoading(false); })
       .catch(() => { setError(true); setLoading(false); });

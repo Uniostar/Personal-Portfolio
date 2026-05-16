@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedSection from '../ui/AnimatedSection';
+import { pub } from '../../utils/asset';
 
 /* Place square logos (256×256 transparent-bg PNG) at:
      public/assets/logos/texas-scl.png
@@ -148,7 +149,7 @@ function LogoBadge({ logoFile, initials, color, size = 'md' }) {
     <div className={`${dim} flex-shrink-0 rounded-xl border ${c.iconBg} flex items-center justify-center overflow-hidden`}>
       {logoFile && !failed ? (
         <img
-          src={`/assets/logos/${logoFile}.png`}
+          src={pub(`/assets/logos/${logoFile}.png`)}
           alt={logoFile}
           className="w-4/5 h-4/5 object-contain"
           onError={() => setFailed(true)}

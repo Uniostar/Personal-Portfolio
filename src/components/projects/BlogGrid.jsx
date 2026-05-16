@@ -5,6 +5,7 @@ import NeonButton from '../ui/NeonButton';
 import AnimatedSection from '../ui/AnimatedSection';
 import TryImg from '../ui/TryImg';
 import { blogPosts } from '../../data/blogPosts';
+import { pub } from '../../utils/asset';
 
 /* Per-platform styles — pill badge, content tags, and CTA button */
 const PLATFORM = {
@@ -33,7 +34,7 @@ function BlogCard({ post, index }) {
         <div className="relative aspect-video bg-gradient-to-br from-dark-surface to-dark-bg overflow-hidden">
           {!imgError ? (
             <TryImg
-              src={post.thumbnail}
+              src={pub(post.thumbnail)}
               alt={post.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               onGiveUp={() => setImgError(true)}

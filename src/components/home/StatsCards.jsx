@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import AnimatedSection from '../ui/AnimatedSection';
 import SectionHeader from '../ui/SectionHeader';
+import { pub } from '../../utils/asset';
 
 /* Skills — languages low→high level, then tools hardware→software, then web dev.
    slug entries use Simple Icons CDN; localPng entries load from /assets/logos/. */
@@ -58,7 +59,7 @@ function StatItem({ value, label, index }) {
 function HexCell({ name, slug, color, localPng, initials }) {
   const [imgFailed, setImgFailed] = useState(false);
   const iconUrl = imgFailed ? null
-    : localPng ? `/assets/logos/${localPng}.png`
+    : localPng ? pub(`/assets/logos/${localPng}.png`)
     : slug     ? `https://cdn.simpleicons.org/${slug}/${color}`
     : null;
 

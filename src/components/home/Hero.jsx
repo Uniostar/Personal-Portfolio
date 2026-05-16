@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import ParticleBackground from './ParticleBackground';
 import NeonButton from '../ui/NeonButton';
 import TryImg from '../ui/TryImg';
+import { pub } from '../../utils/asset';
 
 /* Rotating role titles shown under the name */
 const ROLES = [
@@ -62,7 +63,7 @@ export default function Hero() {
                 </div>
               ) : (
                 <TryImg
-                  src="/assets/profile.jpg"
+                  src={pub('/assets/profile.jpg')}
                   alt="Aryan Kumar"
                   className="w-full h-full object-cover"
                   onGiveUp={() => setImgFailed(true)}

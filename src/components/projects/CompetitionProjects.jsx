@@ -7,6 +7,7 @@ import NeonButton from '../ui/NeonButton';
 import AnimatedSection from '../ui/AnimatedSection';
 import TryImg from '../ui/TryImg';
 import { competitionProjects } from '../../data/competitionProjects';
+import { pub } from '../../utils/asset';
 
 const ACCENT = {
   border:     'border-neon-green/20',
@@ -79,7 +80,7 @@ function ProjectModal({ project, onClose }) {
           <div className="relative aspect-video overflow-hidden flex items-center justify-center" style={ACCENT.thumbStyle}>
             {!imgError ? (
               <TryImg
-                src={project.thumbnail}
+                src={pub(project.thumbnail)}
                 alt={project.title}
                 className="w-full h-full object-cover"
                 onGiveUp={() => setImgError(true)}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import SectionHeader from '../ui/SectionHeader';
 import AnimatedSection from '../ui/AnimatedSection';
+import { pub } from '../../utils/asset';
 
 export default function EducationSection() {
   const [edu, setEdu] = useState(null);
@@ -30,7 +31,7 @@ export default function EducationSection() {
             <div className="w-16 h-16 flex-shrink-0 rounded-xl bg-neon-orange/10 border border-neon-orange/20 flex items-center justify-center overflow-hidden self-start">
               {!logoFailed ? (
                 <img
-                  src="/assets/logos/ut-austin.png"
+                  src={pub('/assets/logos/ut-austin.png')}
                   alt="UT Austin"
                   className="w-4/5 h-4/5 object-contain"
                   onError={() => setLogoFailed(true)}
