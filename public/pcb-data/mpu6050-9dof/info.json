@@ -1,0 +1,7 @@
+{
+  "header": "MPU6050 + LIS3MDL 9 DoF IMU Breakout",
+  "elevator_pitch": "A 9 degrees-of-freedom inertial measurement unit breakout combining the MPU6050 6-axis IMU with a LIS3MDL 3-axis magnetometer, exposed on a single I²C/SPI bus with a Qwiic connector for plug-and-play integration.",
+  "tags": ["IMU", "MPU6050", "LIS3MDL", "9 DoF", "I2C", "Qwiic", "2-Layer", "Concept"],
+  "fabricated": false,
+  "description": "The MPU6050 is one of the most widely used 6-axis IMUs in the maker space, but attitude estimation degrades without a magnetometer to correct gyroscope drift. This breakout adds the ST LIS3MDL magnetometer on the same I²C bus, providing all nine sensor axes for full AHRS implementations using the Madgwick or Mahony filter algorithms.\n\nI²C address selection for both ICs is handled via solder-bridge jumpers, allowing up to four breakouts on a single bus. A SparkFun-compatible Qwiic JST-SH connector enables daisy-chaining without soldering. Logic level translation via a BSS138 FET-based bidirectional level shifter makes the board compatible with both 3.3 V and 5 V microcontrollers.\n\nMounting holes are positioned to allow the board to be oriented on all three axes of a device, with a silkscreen axis legend for sensor-frame alignment. The board includes a dedicated 3.3 V LDO so that only a 5 V supply is needed from the host system."
+}

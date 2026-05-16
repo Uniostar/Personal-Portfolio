@@ -1,0 +1,8 @@
+{
+  "year": "2026",
+  "icon": "Rocket",
+  "color": "neon-purple",
+  "title": "S.I.G.M.A — Autonomous Ground Vehicle",
+  "org": "Collaborative Engineering Project",
+  "detail": "Co-designed an autonomous robot with sensor-fusion navigation (IMU + ultrasonic + encoders), extended Kalman filter state estimation, and A* path planning on a Raspberry Pi 4 with STM32 motor control."
+}

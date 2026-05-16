@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Root variables ──────────────────────────────────────────── */
+:root {
+  --neon-cyan:   #00f5ff;
+  --neon-purple: #7b2fff;
+  --neon-green:  #00ff88;
+  --neon-pink:   #ff2d78;
+  --glass-bg:    rgba(255, 255, 255, 0.04);
+  --glass-border:rgba(255, 255, 255, 0.09);
+}
+
+/* ─── Base resets ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: #05050f;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Custom scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar              { width: 6px; }
+::-webkit-scrollbar-track        { background: #05050f; }
+::-webkit-scrollbar-thumb        { background: #7b2fff; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover  { background: #00f5ff; }
+
+/* ─── Selection colour ────────────────────────────────────────── */
+::selection { background: rgba(0, 245, 255, 0.25); color: #fff; }
+
+/* ─── Glassmorphism utility class ────────────────────────────── */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+/* ─── Neon text glow ──────────────────────────────────────────── */
+.neon-text-cyan   { text-shadow: 0 0 10px rgba(0, 245, 255, 0.45); }
+.neon-text-purple { text-shadow: 0 0 10px rgba(123, 47, 255, 0.45); }
+.neon-text-green  { text-shadow: 0 0 10px rgba(0, 255, 136, 0.45); }
+
+/* ─── Gradient text helper ────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Shimmer loading placeholder ────────────────────────────── */
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.03) 0%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0.03) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+
+/* ─── Circuit-board background grid ──────────────────────────── */
+.circuit-grid {
+  background-image:
+    linear-gradient(rgba(0, 245, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ─── Glowing border on hover — intentionally subtle ─────────── */
+.hover-glow-cyan {
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.hover-glow-cyan:hover {
+  box-shadow: 0 0 14px rgba(0, 245, 255, 0.15), 0 0 36px rgba(0, 245, 255, 0.05);
+  border-color: rgba(0, 245, 255, 0.28) !important;
+}
+.hover-glow-purple {
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.hover-glow-purple:hover {
+  box-shadow: 0 0 14px rgba(123, 47, 255, 0.15), 0 0 36px rgba(123, 47, 255, 0.05);
+  border-color: rgba(123, 47, 255, 0.28) !important;
+}
+.hover-glow-orange {
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.hover-glow-orange:hover {
+  box-shadow: 0 0 14px rgba(255, 107, 0, 0.15), 0 0 36px rgba(255, 107, 0, 0.05);
+  border-color: rgba(255, 107, 0, 0.28) !important;
+}
+.hover-glow-green {
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.hover-glow-green:hover {
+  box-shadow: 0 0 14px rgba(0, 255, 136, 0.15), 0 0 36px rgba(0, 255, 136, 0.05);
+  border-color: rgba(0, 255, 136, 0.28) !important;
+}
+
+/* ─── Page-transition wrapper ────────────────────────────────── */
+.page-enter  { opacity: 0; transform: translateY(20px); }
+.page-active { opacity: 1; transform: translateY(0); transition: all 0.4s ease; }
+
+/* ─── Hide scrollbar on mobile nav ───────────────────────────── */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Typing cursor ──────────────────────────────────────────── */
+.typing-cursor::after {
+  content: '|';
+  animation: blinkCursor 1s step-end infinite;
+  color: var(--neon-cyan);
+}

@@ -1,0 +1,7 @@
+{
+  "header": "LM2596 Step-Up (Boost) Converter",
+  "elevator_pitch": "A through-hole-friendly adjustable boost converter built around the LM2596-ADJ, converting 3 V–12 V inputs to a regulated higher output — designed for panel-mount integration with screw terminals and indicator LEDs.",
+  "tags": ["Boost Converter", "LM2596", "Step-Up", "Through-Hole", "Adjustable", "2-Layer", "Concept"],
+  "fabricated": false,
+  "description": "The LM2596 is typically used as a step-down (buck) converter, but in this design it is configured as a step-up (boost) topology using a modified Ćuk-adjacent switching arrangement. The board accepts input voltages from 3 V to 12 V and boosts to user-selected outputs between 5 V and 35 V via a precision multi-turn trimmer potentiometer in the feedback divider.\n\nDespite being a boost converter, the LM2596 provides internal current limiting and thermal shutdown — essential safety features for bench and field use. A Schottky catch diode (SS54) handles the boost rectification with minimal forward-voltage loss. The output filter consists of a 220 µF electrolytic capacitor with a parallel 100 nF ceramic for high-frequency decoupling.\n\nScrew terminal blocks on the input and output allow the board to be wired into existing panel-mount assemblies without soldering to a PCB. A dual-color LED (red = power, green = output regulation status) provides visual feedback. Board dimensions fit a standard 2U rack-mount panel cutout, and M3 mounting holes allow chassis attachment."
+}

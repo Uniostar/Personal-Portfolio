@@ -1,0 +1,7 @@
+{
+  "header": "ESP32-S3 Flight Breakout",
+  "elevator_pitch": "An enhanced ESP32-S3 breakout designed for flight applications, adding an onboard ICM-42688-P 6-axis IMU, BMP388 barometer, and a 5 V boost converter for servo and pyro channel power.",
+  "tags": ["ESP32-S3", "IMU", "Barometer", "Flight Computer", "4-Layer", "Concept", "Rocketry"],
+  "fabricated": false,
+  "description": "This board extends the base ESP32-S3 breakout with sensors needed for aerospace applications. The ICM-42688-P IMU communicates via a dedicated SPI bus at 24 MHz, providing 6-axis motion data with ±16 g accelerometer range — enough to survive high-power rocket staging events. A BMP388 barometric sensor on a separate I²C bus provides altitude tracking from –500 m to 9000 m MSL with 0.5 m resolution.\n\nA TPS61023 5 V boost converter powers servo output channels and pyrotechnic continuity-check circuitry from a 1S or 2S LiPo without requiring a separate BEC. MOSFETs gate the pyro outputs with TVS diode protection on each channel. A 32 GB microSD slot logs raw sensor data at 1 kHz for post-flight reconstruction.\n\nThe 4-layer stackup separates the high-current 5 V boost converter from the sensitive analog sensor power domain. IMU power is filtered through a dedicated LDO with 10 µF MLCC bypass, minimizing switching noise coupling into the accelerometer. The board mounts in a standard 29 mm avionics bay with M3 standoffs."
+}

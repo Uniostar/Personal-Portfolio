@@ -1,0 +1,8 @@
+{
+  "year": "2026",
+  "icon": "Code2",
+  "color": "neon-cyan",
+  "title": "Doom Mini — ECE319k Game Competition",
+  "org": "UT Austin ECE Department",
+  "detail": "Developed a real-time 3D raycasting game in bare-metal C on the TM4C123 ARM microcontroller. The game rendered at 24 fps on a 128×128 OLED with custom audio playback on the DAC — placing in the top tier of the class competition."
+}

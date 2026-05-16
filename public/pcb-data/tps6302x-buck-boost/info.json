@@ -1,0 +1,7 @@
+{
+  "header": "TPS6302x Buck/Boost Converter Breakout",
+  "elevator_pitch": "A compact, adjustable buck-boost converter breakout using the TPS63021, delivering a stable regulated output across input voltages from 1.8 V to 5.5 V — ideal for single-cell LiPo and AA battery-powered devices.",
+  "tags": ["Buck-Boost", "TPS63021", "LiPo", "Power Management", "2-Layer", "Concept"],
+  "fabricated": false,
+  "description": "Many battery-powered embedded projects need a voltage rail that stays stable as the battery discharges from 4.2 V to 3.0 V. A simple LDO wastes power; a buck-only converter fails when Vbatt dips below Vout. The TPS63021 solves this with a seamless buck-boost topology that maintains output regulation across the full LiPo discharge curve.\n\nThis breakout exposes the TPS63021 with a user-adjustable feedback divider (0402 pads for R1/R2) configurable for any output from 1.8 V to 5.5 V. Input and output screw terminals accept up to 20 AWG wire for lab use. A 2.5 µH shielded inductor (IHLP-2020BZ-01) keeps switching noise below 10 mVpp at 3 A load.\n\nBoard dimensions are 20 mm × 25 mm, placing the design within JLCPCB's low-cost prototype tier. EN/PS-PFM mode selection headers allow power-save mode for standby currents below 50 µA. Footprints are provided for optional 10 µF bulk bypass caps on both rails."
+}

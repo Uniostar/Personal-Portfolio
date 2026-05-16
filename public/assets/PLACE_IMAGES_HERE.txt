@@ -1,0 +1,78 @@
+Place these files in this folder:
+
+  profile.jpg     — Your LinkedIn/professional headshot (used in the Hero section)
+
+────────────────────────────────────────────────────────
+Competition thumbnails — place in public/assets/competition/
+────────────────────────────────────────────────────────
+  project-sunflower.jpg   — Photo or screenshot of Project Sunflower
+  doom-mini.jpg           — Photo or screenshot of Doom Mini
+  sigma.jpg               — Photo or screenshot of S.I.G.M.A
+
+  Recommended: 16:9 aspect ratio, at least 800×450 px.
+  Accepted formats: .jpg, .jpeg, or .png (any of the three is found automatically).
+  A styled placeholder is shown if no matching image exists.
+
+────────────────────────────────────────────────────────
+Blog thumbnails — place in public/assets/blog/
+────────────────────────────────────────────────────────
+  hc05-smartphone.jpg         — Sending Data to Smart Phone Using HC-05
+  esp32-gps-phone.jpg         — Send GPS Data to Your Phone with ESP32 + Neo-6M
+  arduino-neo6m.jpg           — Arduino with Neo-6M GPS Sensor
+  rc-controller.jpg           — Arduino 8+ Channel RC Controller (Arduino Hub)
+  esp32-flight-recorder.jpg   — ESP32 RC Plane Camera Flight Recorder
+  rc-controller-hackster.jpg  — Arduino 8 Channel RC Controller (Hackster.io)
+  hc05-oled.jpg               — HC-05 Bluetooth Module with Arduino Using OLED Display
+  bmp280-logger.jpg           — Adafruit BMP280 + Micro SD Card for Altimeter Logger
+
+  Accepted formats: .jpg, .jpeg, or .png.
+
+────────────────────────────────────────────────────────
+Company logos — place in public/assets/logos/
+────────────────────────────────────────────────────────
+  ut-austin.png           — UT Austin logo / Longhorn logo (square, transparent bg)
+  texas-scl.png           — Texas Spacecraft Laboratory logo (square, transparent bg)
+  american-airlines.png   — American Airlines logo (square, transparent bg)
+  hackster.png            — Hackster.io logo (square, transparent bg)
+  mathnasium.png          — Mathnasium logo (square, transparent bg)
+  pcbway.png              — PCBWay logo (square, transparent bg)
+
+  Skill logos (also in public/assets/logos/):
+  skill-ti.png            — Texas Instruments logo (square, transparent bg)
+  skill-wsl.png           — WSL2 / Windows Subsystem for Linux logo (square, transparent bg)
+  skill-ltspice.png       — LTspice logo (square, transparent bg)
+  skill-css.png           — CSS3 logo (square, transparent bg)
+  skill-linux.png         — Linux / Tux logo (square, transparent bg)
+  skill-java.png          — Java logo (square, transparent bg)
+  skill-asm.png           — Assembly / chip logo (square, transparent bg)
+  skill-csharp.png        — C# logo (square, transparent bg)
+
+  Recommended: 256×256 px PNG with a transparent background.
+  If a file is missing the component shows styled initials automatically.
+
+────────────────────────────────────────────────────────
+PCB photos — place in public/pcb-data/{slug}/
+────────────────────────────────────────────────────────
+  Fabricated boards — 5 files each:
+    photo-1.jpg     — Assembled/finished PCB
+    photo-2.jpg     — PCB layout screenshot from KiCad
+    photo-3.jpg     — 3D render — front view
+    photo-4.jpg     — 3D render — back view
+    schematic.jpg   — Full schematic screenshot
+
+  Fabricated slugs:
+    arduino-nano-rc-receiver/
+    esp32-cam-flight-camera/
+    non-inverting-amplifier/
+    switching-buck-converter/
+
+  Note: concept design folders below are preserved but not rendered in the UI.
+    esp32-s3-breakout/
+    esp32-s3-flight-breakout/
+    tps6302x-buck-boost/
+    mpu6050-9dof/
+    bme280-breakout/
+    lm2596-step-up/
+
+The site displays a styled placeholder wherever an image is missing,
+so you can add photos incrementally without breaking the UI.
