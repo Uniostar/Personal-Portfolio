@@ -1,0 +1,15 @@
+{
+  "header": "ESP32-CAM Flight Camera",
+  "elevator_pitch": "An all-in-one 2-layer flight camera PCB integrating the ESP32-CAM module, a 6-axis IMU, barometric altitude sensor, and microSD card logging — purpose-built for high-power rocketry and high-speed planes.",
+  "tags": [
+    "ESP32",
+    "Camera",
+    "IMU",
+    "Barometer",
+    "SD Card",
+    "Rocketry"
+  ],
+  "fabricated": true,
+  "articleUrl": "https://www.hackster.io/Uniostar/esp32-rc-plane-camera-flight-recorder-with-dashboard-190085",
+  "description": "• 2-layer flight computer fusing an MPU6050 IMU and BME280 barometer with GPIO-synchronized video timestamps for frame-accurate post-flight analysis.\n\n• Solid GND reference plane under all high-speed SPI traces keeps camera, SD card and sensor data clean.\n\n• Board is flight-ready in under 60 seconds no SD card removal needed between flights."
+}

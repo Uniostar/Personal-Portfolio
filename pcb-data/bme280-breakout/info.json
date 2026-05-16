@@ -1,0 +1,7 @@
+{
+  "header": "Bosch BME280 Environmental Breakout",
+  "elevator_pitch": "An ultra-compact breakout for the Bosch BME280 — measuring barometric pressure (±1 hPa), relative humidity (±3 % RH), and temperature (±1 °C) — with selectable SPI or I²C interface and onboard regulation.",
+  "tags": ["BME280", "Environmental Sensor", "I2C", "SPI", "Pressure", "Humidity", "2-Layer", "Concept"],
+  "fabricated": false,
+  "description": "The BME280 packs pressure, humidity, and temperature sensing into a tiny 2.5 mm × 2.5 mm LGA package, making board layout the primary challenge. This breakout routes the BME280's six-pad footprint with an exposed thermal pad to a 0.1-inch header and Qwiic I²C connector, while an SDO address selection solder bridge allows two BME280s on the same I²C bus.\n\nSPI/I²C mode is selected by a three-position header: tie CSB to VCC for I²C; drive it low for SPI. Both modes are tested and documented in the accompanying Arduino library example. The onboard MIC5219 LDO regulates 3.3 V from a 3.3–6 V input, with a 10 µF input cap and 1 µF MLCC output cap for stability.\n\nAll passives are 0402 for compact layout. The PCB is 18 mm × 22 mm — small enough to fit inside an enclosure finger recess. Silkscreen markings include pin names, interface mode labels, and the Bosch part number for quick identification in a component bin."
+}

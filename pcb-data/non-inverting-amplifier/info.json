@@ -1,0 +1,14 @@
+{
+  "header": "Non-Inverting Amplifier",
+  "elevator_pitch": "A precision analog front-end PCB built around the TLV2372 dual op-amp IC, implementing a non-inverting gain stage for sensor signal conditioning with selectable gain resistors and BNC I/O.",
+  "tags": [
+    "Analog",
+    "Op-Amp",
+    "TLV2372",
+    "Signal Conditioning",
+    "2-Layer",
+    "Fabricated"
+  ],
+  "fabricated": true,
+  "description": "• TLV2372 rail-to-rail op-amp with gains selectable by variable resistor — covers the full sensor-band amplification range from a single 5 V supply.\n\n• Star-ground topology with analog/digital split and 100 nF ceramic decoupler keeps noise below the op-amp's thermal floor.\n\n• Both channels break out independently on BNC connectors for direct scope or data-acquisition use."
+}

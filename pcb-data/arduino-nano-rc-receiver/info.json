@@ -1,0 +1,12 @@
+{
+  "header": "Arduino Nano RC Receiver",
+  "elevator_pitch": "A compact 2-layer PCB that pairs an Arduino Nano with the E01-ML01DP5 transceiver module to deliver reliable 2.5 km-range RC telemetry — designed for long-range UAV and model rocketry applications.",
+  "tags": [
+    "Arduino",
+    "RF",
+    "2.4 GHz",
+    "UAV"
+  ],
+  "fabricated": true,
+  "description": "• E01-ML01DP5 (nRF24L01+ PA+LNA, 25 dBm) achieves 2.5 km open-terrain range — 5× further than typical off-the-shelf RC receivers.\n\n• Dedicated AMS1117 3.3 V LDO with 100 nF + 10 µF decoupling to isolate the transceiver during TX bursts.\n\n• Selectable address jumpers support simultaneous multi-receiver operation (mesh networking); through-hole construction allows field repair without a hot-air station."
+}

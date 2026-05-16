@@ -1,0 +1,7 @@
+{
+  "header": "Custom ESP32-S3 Breakout Board",
+  "elevator_pitch": "A clean, minimal ESP32-S3 breakout featuring USB-C native connectivity, an onboard LiPo charger, and castellated edges for SMD mounting — designed to replace bulky dev boards in production-ready projects.",
+  "tags": ["ESP32-S3", "USB-C", "LiPo", "Castellated", "2-Layer", "Concept"],
+  "fabricated": false,
+  "description": "Most ESP32-S3 development boards are too large and too noisy for integration into final products. This breakout distills the module down to its essential interfaces: native USB 2.0 Full-Speed (no CH340 bridge needed), a TP4056 LiPo charging circuit with charge status LEDs, an AP2112K 3.3 V LDO, and a full 40-pin GPIO header.\n\nCastellated half-vias around three edges of the 40 mm × 30 mm board allow the breakout to be reflowed directly onto a carrier PCB — ideal for integrating ESP32-S3 capability into a larger system without a connector. A BOOT/RESET button pair accessible from the carrier board via GPIO allows firmware updates in-system.\n\nThe RF keep-out zone is clearly marked in the silkscreen, and the antenna area is free of copper pours and routing on all layers. Differential pair USB traces are length-matched to within 0.1 mm and routed with 90 Ω differential impedance. The design targets JLCPCB's 4-day standard service."
+}

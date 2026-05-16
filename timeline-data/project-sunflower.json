@@ -1,0 +1,8 @@
+{
+  "year": "2025",
+  "icon": "Trophy",
+  "color": "neon-cyan",
+  "title": "Project Sunflower — Hackathon Submission",
+  "org": "Devpost Hackathon",
+  "detail": "Built a solar-tracking IoT plant health monitor in 24 hours using an ESP32, dual-axis stepper system, MQTT dashboard, and a water-usage prediction ML model."
+}

@@ -1,0 +1,14 @@
+{
+  "header": "Switching Buck Converter",
+  "elevator_pitch": "A high-efficiency synchronous buck converter built around the TPS2832 gate driver and dual CSD18534KCS N-channel MOSFETs, with a TLV2372-based inverting feedback amplifier for output regulation.",
+  "tags": [
+    "Power Electronics",
+    "Analog",
+    "Buck Converter",
+    "TPS2832",
+    "MOSFET",
+    "TLV2372"
+  ],
+  "fabricated": true,
+  "description": "• Synchronous topology with dual MOSFETs delivers 5 A continuous at >90% efficiency — roughly 10% above an equivalent diode-based design.\n\n• TLV2372 error amplifier closes the voltage-feedback loop against a 1.25 V reference for stable regulation across multiple loads.\n\n• Thermal relief vias under both MOSFETs connect to a bottom copper pour; 4.7 µH inductor and 220 µF ceramic capacitor minimize switching ripple."
+}
