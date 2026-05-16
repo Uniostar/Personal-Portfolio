@@ -147,7 +147,7 @@ function ProjectCard({ project, index }) {
         <div className="relative aspect-video overflow-hidden flex items-center justify-center" style={ACCENT.thumbStyle}>
           {!imgError ? (
             <TryImg
-              src={project.thumbnail}
+              src={pub(project.thumbnail)}
               alt={project.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               onGiveUp={() => setImgError(true)}
