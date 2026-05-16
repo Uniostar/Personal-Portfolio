@@ -23,7 +23,7 @@ export const pcbPhotoData = {
   },
   'non-inverting-amplifier': {
     photos: [
-      'Assembled TLV2372 non-inverting amplifier board with BNC input/output connectors',
+      'Assembled TLV2372 inverting amplifier board with BNC I/O connectors',
       'KiCad layout — star-ground topology with short signal traces and large bypass caps',
       '3D render — front: op-amp, gain resistors, and BNC footprints',
       '3D render — back: solid ground pour with via stitching',
