@@ -61,34 +61,32 @@ const EXPERIENCES = [
   {
     id: 'texas-scl',
     company: 'Texas Spacecraft Laboratory',
-    role: 'Electronics Team Member',
+    role: 'Command & Data Handling Team Developer',
     year: '2025 — Present',
     logoFile: 'texas-scl',
     initials: 'TSL',
     color: 'neon-cyan',
     bullets: [
-      'Contributing to the electronics subsystem of student-built CubeSat spacecraft at UT Austin.',
-      'Designing and reviewing PCBs for power regulation, sensor interfacing, and data acquisition.',
-      'Writing and testing embedded firmware for avionics components in C.',
-      'Collaborating across power systems, communications, and attitude-determination subsystems.',
+      'Designed command interface for SCOPE-1 mission to uplink/downlink data with satellite over s-band frequency.',
+      'Tested embedded firmware for avionics components in NASA\'s C++ satellite framework, FPrime.',
+      'Applied systems engineering concepts to collaborate with 5+ teams across power systems, communications, and attitude-determination subsystems.',
     ],
-    skills: ['PCB Design', 'KiCad', 'Embedded C', 'Avionics', 'CubeSat'],
+    skills: ['Embedded C++', 'FPrime', 'Systems Engineering', 'CubeSat'],
   },
   {
     id: 'aa-extern',
     company: 'American Airlines',
-    role: 'Technology Extern',
+    role: 'UI/UX IT Extern',
     year: 'Spring 2025',
     logoFile: 'american-airlines',
     initials: 'AA',
     color: 'neon-purple',
     bullets: [
-      "Completed a structured externship inside American Airlines' Technology division.",
+      "Completed a structured externship inside American Airlines' UI/UX & IT division.",
       'Gained hands-on exposure to enterprise software architecture and IT infrastructure at scale.',
-      'Participated in team standups, product reviews, and shadow sessions with senior engineers.',
-      'Explored technology strategy in the context of commercial aviation operations.',
+      'Participated in team standups, product reviews, and shadow sessions with senior engineers.'
     ],
-    skills: ['Enterprise IT', 'Tech Strategy', 'Aviation Systems'],
+    skills: ['Enterprise IT', 'Tech Strategy', 'UI/UX', 'Figma'],
   },
   {
     id: 'pcbway',
@@ -99,12 +97,11 @@ const EXPERIENCES = [
     initials: 'PW',
     color: 'neon-cyan',
     bullets: [
-      'Received fabrication sponsorship from PCBWay for open-source hardware projects.',
+      'Received fabrication sponsorship from PCBWay to develop open-source hardware projects.',
       'Designing multi-layer PCBs for rocketry, RF systems, and embedded applications.',
-      'Submitting production-ready Gerber files and collaborating through the PCBWay review process.',
-      'Contributing documented designs to the PCBWay open-source community.',
+      'Submitting production-ready Gerber files and collaborating through the PCBWay review process.'
     ],
-    skills: ['PCB Design', 'KiCad', 'Gerber Files', 'Multi-layer PCB', 'Open Source'],
+    skills: ['PCB Design', 'KiCad', 'Multi-layer PCB', 'Open Source'],
   },
   {
     id: 'technical-author',
@@ -115,10 +112,10 @@ const EXPERIENCES = [
     initials: 'H.',
     color: 'neon-green',
     bullets: [
-      'Publishing in-depth guides on embedded systems, PCB design, and RF communications.',
+      'Published 15+ in-depth guides on embedded systems, PCB design, and RF communications to community of 1.5M+ engineers.',
       'Accumulated 75k+ combined article views across Hackster.io and Arduino Project Hub.',
       'Articles featured in platform newsletters and curated project showcases.',
-      'Topics include Bluetooth modules, GPS tracking, RC systems, and flight data logging.',
+      'Topics include Bluetooth modules, GPS tracking, RC systems, and flight data logging.'
     ],
     skills: ['Arduino', 'ESP32', 'Technical Writing', 'RF Systems', 'PCB Design'],
   },
@@ -131,11 +128,11 @@ const EXPERIENCES = [
     initials: 'MN',
     color: 'neon-orange',
     bullets: [
-      'Tutored students in calculus, linear algebra, and differential equations.',
+      'Tutored students in calculus, linear algebra, and geometry',
       'Translated abstract mathematical concepts into intuitive frameworks for each student.',
       'Developed custom problem sets and visual aids tailored to individual learning styles.',
     ],
-    skills: ['Calculus', 'Linear Algebra', 'Differential Equations'],
+    skills: ['Calculus', 'Linear Algebra', 'Geometry'],
   },
 ];
 
