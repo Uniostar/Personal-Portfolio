@@ -7,14 +7,16 @@ export const competitionProjects = [
     id: 'project-sunflower',
     title: 'Project Sunflower',
     tagline: 'Smart solar-tracking plant health monitor — hackathon submission',
-    description: `Project Sunflower is a solar-powered IoT platform designed to maximize photosynthetic efficiency for urban agriculture. The system uses a dual-axis stepper mechanism to orient a sensor array toward the sun, pairing real-time soil-moisture, light-intensity, and temperature data with a React dashboard.
+    description: `• Single-axis servo mechanism orients solar array toward the sun using PID control & inputs from light-sensitive photoresistors.
+    
+• Website created in HTML/CSS/Django raises investor awareness for improved solar architecture installments in sub-urban areas through business tactics.
 
-Built during a 24-hour hackathon, the firmware runs on an ESP32 and streams readings over MQTT to a Node.js broker. A trained regression model predicts optimal watering intervals, reducing water usage by an estimated 30 % in test trials. The enclosure was designed in Fusion 360 and 3D-printed on-site.`,
-    techStack: ['ESP32', 'C/C++', 'Python', 'Servo Control', 'PID'],
-    tags: ['Solar', 'Hackathon', 'Django', 'Embedded'],
+• Developed during a 24-hour hackathon - placed 2nd overall, best hardware & best design.`,
+    techStack: ['ESP32', 'C/C++', 'Django', 'Python', 'Solar'],
+    tags: ['PID', 'Hackathon', 'Servo Control', 'Embedded'],
     externalLink: 'https://devpost.com/software/project-sunflower-a4vum9',
     externalLabel: 'View on Devpost',
-    hasExternalPage: true,
+    hasExternalPage: false,
     color: 'cyan',
     year: '2025',
     thumbnail: '/assets/competition/project-sunflower.jpg',
@@ -28,8 +30,8 @@ Built during a 24-hour hackathon, the firmware runs on an ESP32 and streams read
 • Enemy AI uses a finite-state machine with patrol, chase, and line-of-sight attack states; a custom DAC audio driver plays sampled sound effects from SD card synced to gameplay events.
 
 • 12-bit ADC reads an analog joystick for movement — placed in the top tier of the UT Austin ECE319k class competition.`,
-    techStack: ['C/C++', 'MSPM0G3507', 'ARM Cortex-M4', 'SPI', 'DAC', 'ADC', 'DDA Raycasting', 'Hardware Acceleration'],
-    tags: ['Embedded', 'Game Dev', 'Competition', 'Real-time'],
+    techStack: ['C/C++', 'MSPM0G3507', 'ARM Cortex-M4', 'DDA Raycasting', 'Hardware Acceleration'],
+    tags: ['Embedded', 'Game Dev Competition', 'Real-time'],
     hasExternalPage: false,
     color: 'purple',
     year: '2026',
@@ -39,12 +41,16 @@ Built during a 24-hour hackathon, the firmware runs on an ESP32 and streams read
     id: 'sigma',
     title: 'S.I.G.M.A',
     tagline: 'An offline-first hiking safety system that keeps people alive where cell service can\'t',
-    description: ``,
+    description: `• Wearable device connects to ground station with NRF24lo1+ mesh radio to relay GPS position and vitals to first responders with no cell service required — system stays live up to 1 km.
+
+• Sensor fusion combines GPS, heart rate, and environmental data; SOS alert activates through repeated motion inputs to prevent false positive triggers & records last known position.
+
+• Open-source hardware and software stack with a React dashboard communicating over MQTT to ground stations deployed in field.`,
     techStack: ['React', 'HTML/CSS', 'C++', 'Arduino', 'ESP32'],
     tags: ['IoT', 'GPS/Radio', 'Sensor Fusion', 'Open Source'],
     externalLink: 'https://github.com/AthM23/S.I.G.M.A',
     externalLabel: 'View on GitHub',
-    hasExternalPage: true,
+    hasExternalPage: false,
     color: 'green',
     year: '2026',
     thumbnail: '/assets/competition/sigma.jpg',

@@ -57,11 +57,6 @@ function ProjectModal({ project, onClose }) {
         {/* Sticky header */}
         <div className="flex items-start justify-between gap-3 px-5 sm:px-7 pt-5 pb-4 border-b border-white/06 flex-shrink-0">
           <div className="flex-1 min-w-0">
-            <div className="flex flex-wrap gap-1.5 mb-2">
-              {project.tags.map(t => (
-                <span key={t} className={`text-xs px-2 py-0.5 rounded-full border font-mono ${ACCENT.badge}`}>{t}</span>
-              ))}
-            </div>
             <h2 className="font-bold text-slate-100 text-base sm:text-lg leading-snug">{project.title}</h2>
             <p className="text-neon-green/60 text-xs font-mono mt-0.5">{project.year}</p>
           </div>
@@ -114,15 +109,22 @@ function ProjectModal({ project, onClose }) {
               );
             })()}
 
-            {/* Tech stack */}
+            {/* External link */}
+            {project.externalLink && (
+              <NeonButton
+                href={project.externalLink}
+                variant="ghost"
+                className={`w-full justify-center ${ACCENT.btn}`}
+              >
+                <ExternalLink size={13} />
+                {project.externalLabel}
+              </NeonButton>
+            )}
+
+            {/* Tags — categorisation, shown at bottom inside modal */}
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {project.techStack.map(tech => (
-                <span
-                  key={tech}
-                  className="font-mono text-xs px-2.5 py-1 rounded-full bg-white/04 border border-white/10 text-slate-500"
-                >
-                  {tech}
-                </span>
+              {project.tags.map(t => (
+                <span key={t} className="font-mono text-xs px-2 py-0.5 rounded-full bg-white/04 border border-white/10 text-slate-500">{t}</span>
               ))}
             </div>
           </div>
@@ -166,8 +168,10 @@ function ProjectCard({ project, index }) {
         {/* Card body */}
         <div className="flex flex-col flex-1 p-5 gap-3">
           <div className="flex flex-wrap gap-1.5">
-            {project.tags.map(t => (
-              <span key={t} className={`text-xs px-2 py-0.5 rounded-full border font-mono ${ACCENT.badge}`}>{t}</span>
+            {project.techStack.map(tech => (
+              <span key={tech} className={`text-xs px-2 py-0.5 rounded-full border font-mono ${ACCENT.badge}`}>
+                {tech}
+              </span>
             ))}
           </div>
 
@@ -175,24 +179,13 @@ function ProjectCard({ project, index }) {
           <p className="text-slate-500 text-xs leading-relaxed flex-1">{project.tagline}</p>
 
           {/* Action button */}
-          {project.hasExternalPage ? (
-            <NeonButton
-              href={project.externalLink}
-              variant="ghost"
-              className={`w-full justify-center ${ACCENT.btn}`}
-            >
-              <ExternalLink size={13} />
-              {project.externalLabel}
-            </NeonButton>
-          ) : (
-            <NeonButton
-              onClick={() => setModalOpen(true)}
-              variant="ghost"
-              className={`w-full justify-center ${ACCENT.btn}`}
-            >
-              View Details
-            </NeonButton>
-          )}
+          <NeonButton
+            onClick={() => setModalOpen(true)}
+            variant="ghost"
+            className={`w-full justify-center ${ACCENT.btn}`}
+          >
+            View Details
+          </NeonButton>
         </div>
       </GlassCard>
 

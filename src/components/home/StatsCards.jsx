@@ -12,8 +12,8 @@ const SKILL_LOGOS = [
   { name: 'Assembly',         localPng: 'skill-asm',     initials: 'ASM' },
   { name: 'C / C++',         slug: 'cplusplus',          color: '00599C' },
   { name: 'Java',             localPng: 'skill-java',    initials: 'JV'  },
-  { name: 'C#',               localPng: 'skill-csharp',  initials: 'C#'  },
   { name: 'Python',           slug: 'python',            color: '3776AB' },
+  { name: 'Django',           slug: 'django',            color: '092E20' },
   // ── Tools (hardware → software) ───────────────────────────────────────
   { name: 'Texas Instruments', localPng: 'skill-ti',     initials: 'TI'  },
   { name: 'LTspice',          localPng: 'skill-ltspice', initials: 'LT'  },
