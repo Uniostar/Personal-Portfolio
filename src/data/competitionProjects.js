@@ -7,9 +7,7 @@ export const competitionProjects = [
     id: 'project-sunflower',
     title: 'Project Sunflower',
     tagline: 'Smart solar-tracking plant health monitor — hackathon submission',
-    description: `• Single-axis servo mechanism orients solar array toward the sun using PID control & inputs from light-sensitive photoresistors.
-    
-• Website created in HTML/CSS/Django raises investor awareness for improved solar architecture installments in sub-urban areas through business tactics.
+    description: `• Single-axis servo mechanism orients solar array toward the sun using PID control & inputs from light-sensitive photoresistors.\n\n• Website created in HTML/CSS/Django raises investor awareness for improved solar architecture installments in sub-urban areas through business tactics.
 
 • Developed during a 24-hour hackathon - placed 2nd overall, best hardware & best design.`,
     techStack: ['ESP32', 'C/C++', 'Django', 'Python', 'Solar'],
