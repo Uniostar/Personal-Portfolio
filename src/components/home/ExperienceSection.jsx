@@ -76,7 +76,7 @@ const EXPERIENCES = [
   {
     id: 'aa-extern',
     company: 'American Airlines',
-    role: 'UI/UX IT Extern',
+    role: 'UI/UX & IT Extern',
     year: 'Spring 2025',
     logoFile: 'american-airlines',
     initials: 'AA',
@@ -107,7 +107,7 @@ const EXPERIENCES = [
     id: 'technical-author',
     company: 'Hackster.io & Arduino Hub',
     role: 'Technical Author',
-    year: '2024 — Present',
+    year: '2022 — Present',
     logoFile: 'hackster',
     initials: 'H.',
     color: 'neon-green',
